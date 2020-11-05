@@ -1,0 +1,39 @@
+$time: 5s;
+.portas {
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  & .porta-um,
+  & .porta-dois {
+    height: 100%;
+    width: 100%;
+    background-color: $roxo;
+  }
+  & .porta-abrindo-um {
+    animation: portaabrindoum $time linear infinite;
+  }
+  & .porta-abrindo-dois {
+    animation: portaabrindodois $time linear infinite;
+  }
+  & .portafechandoum {
+    animation: fechar $time linear infinite;
+  }
+}
+
+@keyframes portaabrindoum {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes portaabrindodois {
+  0% {
+    margin-left: 0%;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}

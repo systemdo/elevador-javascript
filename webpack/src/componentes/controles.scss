@@ -1,0 +1,47 @@
+@contoles .controles {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  height: 25px;
+  border: 2px solid $preto;
+  & .controle {
+    //background-color: $azulsuave;
+    border: 1px solid $roxo;
+    display: inline-flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    &.controle-peq {
+      height: 15px;
+      width: 15px;
+      font-size: 0.8rem;
+    }
+    &.piso-parado {
+      border: 1px solid $preto;
+      background-color: $roxo;
+      color: white;
+    }
+  }
+}
+.container-controle {
+  & .controle {
+    border: 1px solid $roxo;
+    display: inline-flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    &.controle-peq {
+      height: 15px;
+      width: 15px;
+      font-size: 0.8rem;
+    }
+    &.piso-parado {
+      border: 1px solid $preto;
+      background-color: $roxo;
+      color: white;
+    }
+  }
+}

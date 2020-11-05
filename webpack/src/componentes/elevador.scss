@@ -1,0 +1,45 @@
+//@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700");
+@import "../constantes/cores.scss";
+@import "./estrutura.scss";
+@import "./portas.scss";
+@import "./controles.scss";
+
+.grid-elevador {
+  display: flex;
+  background-color: $azulbebe;
+  height: 60px;
+  animation: spin 10s linear infinite;
+  width: 60px;
+  border-radius: 50%;
+  z-index: 222;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0deg);
+    background: blue;
+    margin-top: 0em;
+  }
+  25% {
+    transition: rotateZ(180deg);
+    background: orange;
+    margin-left: 56em;
+  }
+  50% {
+    transition: rotateZ(180deg);
+    background: orange;
+    margin-left: 6em;
+  }
+  99% {
+    transform: rotateZ(360deg);
+    background: green;
+    margin-top: 56em;
+    margin-left: 56em;
+  }
+  100% {
+    transform: rotateZ(360deg);
+    background: green;
+    margin-bottom: 56em;
+    margin-left: 0em;
+  }
+}
